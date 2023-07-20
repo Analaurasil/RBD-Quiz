@@ -31,7 +31,7 @@ main {
     padding: 10px;
     border-radius: 10px;
     width: 100%;
-    max-width: 400px; /* Reduz o tamanho máximo do container para 400px */
+    max-width: 400px; 
     min-height: 400px;
     display: flex;
     align-items: center;
@@ -78,14 +78,18 @@ button {
 
 @media (max-width: 600px) {
     body img {
-        width: 80%; /* Reduz o tamanho da imagem para 80% da largura do container */
+        width: 80%;
     }
 
     main {
-        max-width: 90%; /* Reduz o tamanho máximo do container para 90% */
+        max-width: 90%;
+        min-height: 300px; 
     }
 
     .conteudo {
-        gap: 5px; /* Reduz o espaçamento entre os elementos do conteúdo */
+        gap: 5px;
     }
 }
+
+
+
