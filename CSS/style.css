@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 0, 0) 100%);
+    background-image: url(../Imagens/desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body img {
+    justify-content: center;
+    width: 300px;
+    height: auto;
+}
+
+main {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px; /* Reduz o tamanho máximo do container para 400px */
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.Qtd {
+    text-align: end;
+}
+
+.respostas {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+button {
+    width: 100%;
+    text-align: start;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+.fim {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fim button {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    body img {
+        width: 80%; /* Reduz o tamanho da imagem para 80% da largura do container */
+    }
+
+    main {
+        max-width: 90%; /* Reduz o tamanho máximo do container para 90% */
+    }
+
+    .conteudo {
+        gap: 5px; /* Reduz o espaçamento entre os elementos do conteúdo */
+    }
+}
