@@ -89,6 +89,10 @@ button {
     .conteudo {
         gap: 5px;
     }
+
+    .footer{
+        font-size: 6px;
+    }
 }
 
 
